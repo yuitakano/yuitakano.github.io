@@ -1337,6 +1337,16 @@ body.archive-inner .archive-article-date .icon-clock {
     color: #e5e5e5; }
     .tools-col .tools-section-friends .switch-friends-link:hover {
       background: #6b6b6b; }
+  .tools-col .tools-section-category .category-wrap {
+    padding: 15px; }
+  .tools-col .tools-section-category .article-category-link {
+    padding: 7px 0 7px 5px;
+    border-bottom: 1px solid #717171;
+    border-top: 1px solid #5d5d5d;
+    display: block;
+    color: #e5e5e5; }
+    .tools-col .tools-section-category .article-category-link:hover {
+      background: #6b6b6b; }
   .tools-col .aboutme-wrap, .tools-col .category-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
