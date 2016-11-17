@@ -22,7 +22,7 @@ ps. API 有分前後端在web上使用請選擇JavaScript版本
 選好專案與API類型(Google Maps JavaScript API)按下啟動，等待啟動完成
 ps. API 有分前後端在web上使用請選擇JavaScript版本
 將Google Maps 引入你的網頁1&amp;lt;script async defer src=&amp;quot;https://maps.google">
-<meta property="og:updated_time" content="2016-11-17T08:04:44.251Z">
+<meta property="og:updated_time" content="2016-11-17T15:20:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to use the Google Maps API for JavaScript">
 <meta name="twitter:description" content="首先必須先取得Auth Key Get A Key
@@ -163,16 +163,16 @@ ps. API 有分前後端在web上使用請選擇JavaScript版本
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      How to use the Google Maps API for JavaScript
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/17/how-to-use-google-map-api-for-javascript/">How to use the Google Maps API for JavaScript</a>
     </h1>
   
 
       </header>
     
     <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="首先必須先取得Auth-Key"><a href="#首先必須先取得Auth-Key" class="headerlink" title="首先必須先取得Auth Key"></a>首先必須先取得Auth Key</h2><p> <a href="https://console.developers.google.com/flows/enableapi?apiid=maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend,places_backend&amp;reusekey=true" target="_blank" rel="external">Get A Key</a></p>
+    
+			  <h2 id="首先必須先取得Auth-Key"><a href="#首先必須先取得Auth-Key" class="headerlink" title="首先必須先取得Auth Key"></a>首先必須先取得Auth Key</h2><p> <a href="https://console.developers.google.com/flows/enableapi?apiid=maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend,places_backend&amp;reusekey=true" target="_blank" rel="external">Get A Key</a></p>
 <p> <a href="https://console.developers.google.com/apis/dashboard?project=test-6551d&amp;duration=PT1H" target="_blank" rel="external">Manger Api Key</a></p>
 <h2 id="選好專案與API類型-Google-Maps-JavaScript-API"><a href="#選好專案與API類型-Google-Maps-JavaScript-API" class="headerlink" title="選好專案與API類型(Google Maps JavaScript API)"></a>選好專案與API類型(Google Maps JavaScript API)</h2><p>按下啟動，等待啟動完成</p>
 <p>ps. API 有分前後端在web上使用請選擇JavaScript版本</p>
@@ -181,7 +181,7 @@ ps. API 有分前後端在web上使用請選擇JavaScript版本
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;signed_in=true&amp;libraries=places&quot; async defer&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://developers.google.com/maps/?hl=zh-tw" target="_blank" rel="external">Google Maps API</a></p>
 
-      
+			      
     </div>
     <div class="article-info article-info-index">
       
@@ -206,16 +206,6 @@ ps. API 有分前後端在web上使用請選擇JavaScript版本
   </div>
 </article>
 
-  
-<nav id="article-nav">
-  
-  
-    <a href="/2016/11/17/lineBot/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">lineBot</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
 
 
 
@@ -223,24 +213,6 @@ ps. API 有分前後端在web上使用請選擇JavaScript版本
 
 
 
-
-
-
-<section id="comments">
-  <div id="disqus_thread"></div>
-    <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'yuitakano'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</section>
 
 
       </div>
@@ -260,7 +232,7 @@ ps. API 有分前後端在web上使用請選擇JavaScript版本
     <script>
 	var yiliaConfig = {
 		fancybox: true,
-		mathjax: false,
+		mathjax: true,
 		animate: true,
 		isHome: false,
 		isPost: true,
@@ -274,6 +246,27 @@ ps. API 有分前後端在web上使用請選擇JavaScript版本
 </script>
 
 <script src="/./main.js"></script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
     

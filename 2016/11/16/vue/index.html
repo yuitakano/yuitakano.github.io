@@ -154,20 +154,20 @@ vue">
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      vue
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/16/vue/">vue</a>
     </h1>
   
 
       </header>
     
     <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="vue-todo-list"><a href="#vue-todo-list" class="headerlink" title="vue todo list"></a>vue todo list</h1><ul>
+    
+			  <h1 id="vue-todo-list"><a href="#vue-todo-list" class="headerlink" title="vue todo list"></a>vue todo list</h1><ul>
 <li>vue</li>
 </ul>
 
-      
+			      
     </div>
     <div class="article-info article-info-index">
       
@@ -192,25 +192,6 @@ vue">
   </div>
 </article>
 
-  
-<nav id="article-nav">
-  
-    <a href="/2016/11/17/disqus/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Disqus
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2016/11/15/ssh/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">ssh</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
 
 
 
@@ -218,24 +199,6 @@ vue">
 
 
 
-
-
-
-<section id="comments">
-  <div id="disqus_thread"></div>
-    <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'yuitakano'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</section>
 
 
       </div>
@@ -255,7 +218,7 @@ vue">
     <script>
 	var yiliaConfig = {
 		fancybox: true,
-		mathjax: false,
+		mathjax: true,
 		animate: true,
 		isHome: false,
 		isPost: true,
@@ -269,6 +232,27 @@ vue">
 </script>
 
 <script src="/./main.js"></script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
     

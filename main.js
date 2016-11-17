@@ -10324,7 +10324,7 @@
 			$('.archive-article-date').attr('href', 'javascript:void(0);')
 		} else if (! /\/archives\/(.*)/.test(window.location.pathname) && !isMobile) {
 			// 父级
-			var $frame = $('<iframe class="' + frameClass + '"></iframe>').attr('src', '/archives')
+			var $frame = $('<iframe class="' + frameClass + '"></iframe>').attr('src', '/archives/')
 			$('.tools-section-all').append($frame)
 			// 避免闪动
 			$frame[0].onload = function() {
@@ -10573,7 +10573,7 @@
 		// 插入“全部文章”
 		if (yiliaConfig && yiliaConfig.innerArchive) {
 			var str = $('.js-smart-menu').first().html()
-			$('.header-menu ul').append('<li><a href="/archives">' + str +'</a></li>')
+			$('.header-menu ul').append('<li><a href="/archives/">' + str +'</a></li>')
 		}
 
 		var menuStr = '<span class="viewer-title">菜单</span><div class="viewer-div menu" id="js-mobile-menu"></div>'
